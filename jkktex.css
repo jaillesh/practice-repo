@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.jkktex-main-layout {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.logo-container {
+    position: static;
+    text-align: left;
+    top: 20px;
+    left: 20px;
+}
+
+.logo-container img {
+    width: 5%;
+    height: 5%
+    
+}
+
+.bg-images-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg-images-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.bg-images-container img.active {
+    opacity: 1;
+}
+
+.jkktex-text-heading {
+    z-index: 1;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.jkktex-text-heading h1 {
+    font-family: 'Copperplate Gothic Bold', sans-serif;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.jkktex-text-heading h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.jkktex-text-heading p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.auth-container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    width: 300px;
+}
+
+.auth-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff3700;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-container button:hover {
+    background-color: #b3001b;
+}
